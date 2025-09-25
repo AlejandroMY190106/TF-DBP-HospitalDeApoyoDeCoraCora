@@ -49,6 +49,7 @@ Para ejecutar este proyecto en tu entorno local, sigue estos pasos:
 ## 👤 Autor
 
 *   **Alejandro Mendoza Yauri** - [AlejandroMY190106](https://github.com/AlejandroMY190106)
+*   **Cesar Raul Valdivia Huayllas** - [CesarRaulVH](https://github.com/CesarRaulVH)
 
 ---
 *Este README fue generado con la ayuda de GitHub Copilot.*
