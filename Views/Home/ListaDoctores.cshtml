@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Lista de Doctores";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Hospital de Apoyo de Coracora</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="main-content">
+        <div class="list-container">
+            <h2>Lista de Doctores</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Nombre Completo</th>
+                        <th>Especialidad</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Ejemplo de fila -->
+                    <tr>
+                        <td>Ana Torres Rojas</td>
+                        <td>Pediatría</td>
+                        <td>ana.torres@correo.com</td>
+                        <td>
+                            <button class="btn-secondary">Modificar</button>
+                            <button class="btn-secondary">Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-- Las demás filas se generarían dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

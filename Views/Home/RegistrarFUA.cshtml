@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Registrar FUA";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Hospital de Apoyo de Coracora</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="main-content">
+        <div class="form-container">
+            <h2>Registro de Formato Único de Atención (FUA)</h2>
+            <form id="registrarFuaForm">
+                <div class="form-group">
+                    <label for="paciente">Paciente</label>
+                    <input type="text" id="paciente" placeholder="Buscar por DNI o Nombre del Paciente" required>
+                </div>
+                <div class="form-group">
+                    <label for="diagnostico">Diagnóstico</label>
+                    <textarea id="diagnostico" placeholder="Ingrese el diagnóstico" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="tratamiento">Tratamiento</label>
+                    <textarea id="tratamiento" placeholder="Ingrese el tratamiento" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fechaAtencion">Fecha de Atención</label>
+                    <input type="date" id="fechaAtencion" required>
+                </div>
+                <button type="submit" class="btn-primary">Guardar FUA</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

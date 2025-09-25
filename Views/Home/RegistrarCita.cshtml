@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Registrar Cita";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Hospital de Apoyo de Coracora</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="main-content">
+        <div class="form-container">
+            <h2>Solicitar una Cita Médica</h2>
+            <form id="registrarCitaForm">
+                <div class="form-group">
+                    <label for="especialidad">Especialidad Requerida</label>
+                    <select id="especialidad" required>
+                        <option value="">Seleccione una especialidad</option>
+                        <option value="medicina-general">Medicina General</option>
+                        <option value="pediatria">Pediatría</option>
+                        <option value="ginecologia">Ginecología</option>
+                        <option value="cardiologia">Cardiología</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor" required>
+                        <option value="">Seleccione un doctor</option>
+                        <!-- Las opciones se cargarían dinámicamente -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fechaCita">Fecha Deseada</label>
+                    <input type="date" id="fechaCita" required>
+                </div>
+                <div class="form-group">
+                    <label for="motivo">Motivo de la Cita</label>
+                    <textarea id="motivo" placeholder="Describa brevemente el motivo de su visita" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Confirmar Cita</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

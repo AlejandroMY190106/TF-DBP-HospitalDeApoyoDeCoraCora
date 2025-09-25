@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Detalle del Doctor";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Hospital de Apoyo de Coracora</title>
+    <link href="~/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="main-content">
+        <div class="detail-container">
+            <h2>Detalle del Doctor</h2>
+            <div class="detail-card doctor-detail">
+                <div class="doctor-photo">
+                    <img src="~/assets/doctor-placeholder.png" alt="Foto del Doctor">
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Ana Torres Rojas</h3>
+                    <p><strong>Especialidad:</strong> Pediatría</p>
+                    <p><strong>Correo Electrónico:</strong> ana.torres@correo.com</p>
+                    <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h4>Citas Programadas</h4>
+                <!-- Aquí iría una tabla con las citas del doctor -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
