@@ -18,15 +18,56 @@ namespace TF_HospitalDeApoyoDeCoraCora.Controllers
             return View();
         }
 
+        public IActionResult RegistrarPaciente()
+        {
+            return View();
+        }
         public IActionResult LoginPaciente()
         {
             return View();
         }
 
-        public IActionResult RegistrarPaciente()
+        public IActionResult DetalleDoctor()
         {
             return View();
         }
+        public IActionResult DetallePaciente()
+        {
+            return View();
+        }
+        public IActionResult ListaCitas()
+        {
+            return View();
+        }
+        public IActionResult ListaDoctores()
+        {
+            return View(); 
+        }
+        public IActionResult ListaPacientes()
+        {
+            return View();
+        }
+        public IActionResult ListaProductos()
+        {
+            return View();
+        }
+        public IActionResult RegistrarCita()
+        {
+            return View();
+        }
+        public IActionResult RegistrarDoctor()
+        {
+            return View();
+        }
+        public IActionResult RegistrarFUA()
+        {
+            return View();
+        }
+        public IActionResult RegistrarProducto()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
