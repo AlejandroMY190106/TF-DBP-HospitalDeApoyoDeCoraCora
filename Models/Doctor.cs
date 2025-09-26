@@ -15,6 +15,7 @@
         // Campos adicionales que existían antes pero no están en la imagen
         public int Id { get; set; } // Campo ID original
         public string? Correo { get; set; } // Campo de correo original
+        public string Contraseña { get; set; } = null!; // Campo de contraseña original
         public string? FotoUrl { get; set; } // Campo de foto original
         
         // Propiedades de compatibilidad
