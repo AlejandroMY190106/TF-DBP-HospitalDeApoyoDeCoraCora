@@ -6,6 +6,6 @@
         public int PacienteId { get; set; }
         public int DoctorId { get; set; }
         public DateTime FechaCita { get; set; }
-        public string Motivo { get; set; }
+        public required string Motivo { get; set; }
     }
 }
