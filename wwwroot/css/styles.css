@@ -252,7 +252,75 @@ body {
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
 }
+
+        .inventory-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .quantity-input {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .btn-quantity {
+            background: #f8f9fa;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .btn-decrease {
+            color: #dc3545;
+        }
+        
+        .btn-increase {
+            color: #28a745;
+        }
+        
+        .quantity-field {
+            border: none;
+            text-align: center;
+            width: 50px;
+            padding: 5px;
+            outline: none;
+        }
+        
+        .inventory-actions {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .btn-success {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+            border: none;
+            padding: 4px 8px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
 
 /* Responsive Design */
 @media (max-width: 768px) {
