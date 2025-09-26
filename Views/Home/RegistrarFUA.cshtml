@@ -9,28 +9,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - Hospital de Apoyo de Coracora</title>
     <link href="~/css/styles.css" rel="stylesheet" />
+    <style>
+        .form-section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+            .form-section h3 {
+                margin-top: 0;
+                border-bottom: 2px solid #0056b3;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+            }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+    </style>
 </head>
 <body>
     <main class="main-content">
         <div class="form-container">
             <h2>Registro de Formato Único de Atención (FUA)</h2>
             <form id="registrarFuaForm">
-                <div class="form-group">
-                    <label for="paciente">Paciente</label>
-                    <input type="text" id="paciente" placeholder="Buscar por DNI o Nombre del Paciente" required>
+
+                <div class="form-section">
+                    <h3>De la IPRESS y Atención</h3>
+                    <div class="grid-container">
+                        <div class="form-group">
+                            <label for="numeroFormato">Número de Formato</label>
+                            <input type="text" id="numeroFormato" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="codigoRenipress">Código RENIPRESS</label>
+                            <input type="text" id="codigoRenipress" value="00012345" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="nombreIpress">Nombre de la IPRESS</label>
+                            <input type="text" id="nombreIpress" value="Hospital de Apoyo de Coracora" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaAtencion">Fecha de Atención</label>
+                            <input type="date" id="fechaAtencion" required>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="diagnostico">Diagnóstico</label>
-                    <textarea id="diagnostico" placeholder="Ingrese el diagnóstico" rows="3" required></textarea>
+
+                <div class="form-section">
+                    <h3>Del Asegurado</h3>
+                    <div class="grid-container">
+                        <div class="form-group">
+                            <label for="paciente">Buscar Paciente</label>
+                            <input type="text" id="paciente" placeholder="Buscar por DNI o Nombre del Paciente" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="historiaClinica">N° Historia Clínica</label>
+                            <input type="text" id="historiaClinica" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="codigoSia">Código Asegurado SIS</label>
+                            <input type="text" id="codigoSia" readonly>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="tratamiento">Tratamiento</label>
-                    <textarea id="tratamiento" placeholder="Ingrese el tratamiento" rows="3" required></textarea>
+
+                <div class="form-section">
+                    <h3>Atención Médica</h3>
+                    <div class="grid-container">
+                        <div class="form-group">
+                            <label for="diagnostico">Diagnóstico</label>
+                            <textarea id="diagnostico" placeholder="Ingrese el diagnóstico principal" rows="3" required></textarea>                        </div>
+                        <div class="form-group">
+                            <label for="cie10">CIE-10 Ingreso</label>
+                            <input type="text" id="cie10" placeholder="Ej: J00">
+                        </div>
+                        <div class="form-group">
+                            <label for="tratamiento">Tratamiento</label>
+                            <textarea id="tratamiento" placeholder="Ingrese el tratamiento y/o procedimientos" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="destino">Destino del Asegurado</label>
+                            <select id="destino" required>
+                                <option value="ALTA">Alta</option>
+                                <option value="CITA">Cita</option>
+                                <option value="REFERIDO">Referido</option>
+                                <option value="FALLECIDO">Fallecido</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="fechaAtencion">Fecha de Atención</label>
-                    <input type="date" id="fechaAtencion" required>
-                </div>
+
                 <button type="submit" class="btn-primary">Guardar FUA</button>
             </form>
         </div>
